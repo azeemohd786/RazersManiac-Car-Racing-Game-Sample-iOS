@@ -247,7 +247,9 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         if !stopEverything{
         let leftTrafficItem : SKSpriteNode!
             let randonNumber = Helper().randomBetweenTwoNumbers(firstNumber: 1, secondNumber: 4, thirdNumber: 12, fourthNumber: 16)
-        switch Int(randonNumber) {
+        
+            //NOTE: Unless fallthrough is used, break isn't needed
+            switch Int(randonNumber) {
         case 1...4:
         leftTrafficItem = SKSpriteNode(imageNamed: "car0")
             leftTrafficItem.name = "car0"
