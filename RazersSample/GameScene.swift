@@ -251,19 +251,19 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         case 1...4:
         leftTrafficItem = SKSpriteNode(imageNamed: "car0")
             leftTrafficItem.name = "car0"
-            break
+           
         case 5...8:
             leftTrafficItem = SKSpriteNode(imageNamed: "car1")
             leftTrafficItem.name = "car1"
-            break
+          
         case 9...12:
                   leftTrafficItem = SKSpriteNode(imageNamed: "car2")
                   leftTrafficItem.name = "car2"
-                  break
+                
             case 13...15:
                 leftTrafficItem = SKSpriteNode(imageNamed: "truck3")
                 leftTrafficItem.name = "truck3"
-                break
+              
         default:
             leftTrafficItem = SKSpriteNode(imageNamed: "truck3")
             leftTrafficItem.name = "truck3"
@@ -274,16 +274,16 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         switch Int(randomNum) {
         case 1...4:
             leftTrafficItem.position.x = -280//-280
-            break
+         
         case 5...8:
             leftTrafficItem.position.x = 280//-100
-            break
+          
         case 9...12:
             leftTrafficItem.position.x = -280//-280
-            break
+           
         case 12...15:
             leftTrafficItem.position.x = 280//-280
-            break
+           
         default:
             leftTrafficItem.position.x = 280//-280
         }
@@ -307,13 +307,13 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             rightTrafficItem.size.width = 71
             rightTrafficItem.size.height = 131
             rightTrafficItem.name = "car0"
-            break
+          
         case 5...8:
             rightTrafficItem = SKSpriteNode(imageNamed: "car1")
              rightTrafficItem.size.width = 71
             rightTrafficItem.size.height = 131
             rightTrafficItem.name = "car1"
-            break
+           
         default:
             rightTrafficItem = SKSpriteNode(imageNamed: "car2")
             rightTrafficItem.size.width = 71
@@ -326,10 +326,10 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         switch Int(randomNum) {
         case 1...4:
             rightTrafficItem.position.x = 280
-            break
+          
         case 5...10:
             rightTrafficItem.position.x = 100
-            break
+          
         default:
             rightTrafficItem.position.x = 280
         }
