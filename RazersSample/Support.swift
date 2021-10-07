@@ -6,7 +6,7 @@
 //  Copyright © 2020 Blue Mango Global. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct ColliderType {
     static let CAR_COLLIDER : UInt32 = 0
